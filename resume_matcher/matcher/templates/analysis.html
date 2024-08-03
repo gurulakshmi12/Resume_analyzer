@@ -1,0 +1,53 @@
+<!-- analysis.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, black, grey);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            text-align: center;
+        }
+        a {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            color: #2b2f2b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #242e25;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Result</h1>
+        <p>Similarity Score: {{ similarity }}</p>
+        <a href="{% url 'home' %}">Go back</a>
+    </div>
+</body>
+</html>
